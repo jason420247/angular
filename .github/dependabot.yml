@@ -1,0 +1,25 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "11:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: rollup
+    versions:
+    - 2.38.0
+    - 2.38.5
+  - dependency-name: dependency-graph
+    versions:
+    - 0.10.0
+  - dependency-name: core-js
+    versions:
+    - 3.8.3
+  - dependency-name: chokidar
+    versions:
+    - 3.4.3
+  - dependency-name: handlebars
+    versions:
+    - 4.7.6
